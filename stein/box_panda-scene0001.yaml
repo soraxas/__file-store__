@@ -1,0 +1,102 @@
+name: ""
+robot_state:
+  joint_state:
+    name: [panda_joint1, panda_joint2, panda_joint3, panda_joint4, panda_joint5, panda_joint6, panda_joint7, panda_finger_joint1, panda_finger_joint2]
+    position: [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  multi_dof_joint_state:
+    joint_names: [virtual_joint]
+    transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
+    twist: []
+    wrench: []
+robot_model_name: panda
+fixed_frame_transforms:
+  - child_frame_id: world
+    transform:
+      translation: [0, 0, 0]
+      rotation: [0, 0, 0, 1]
+allowed_collision_matrix:
+  entry_names: [panda_hand, panda_leftfinger, panda_link0, panda_link1, panda_link2, panda_link3, panda_link4, panda_link5, panda_link6, panda_link7, panda_rightfinger]
+  entry_values:
+    - [false, true, false, false, false, true, true, false, true, true, true]
+    - [true, false, false, false, false, true, true, false, true, true, true]
+    - [false, false, false, true, true, true, true, false, false, false, false]
+    - [false, false, true, false, true, true, true, false, false, false, false]
+    - [false, false, true, true, false, true, true, false, true, false, false]
+    - [true, true, true, true, true, false, true, true, true, true, true]
+    - [true, true, true, true, true, true, false, true, true, true, true]
+    - [false, false, false, false, false, true, true, false, true, false, false]
+    - [true, true, false, false, true, true, true, true, false, true, true]
+    - [true, true, false, false, false, true, true, false, true, false, true]
+    - [true, true, false, false, false, true, true, false, true, true, false]
+world:
+  collision_objects:
+    - id: Can1
+      pose:
+        position: [-0.2503840965913496, 0.2398315314845401, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750122, 0.9972531602635496]
+      primitives:
+        - type: cylinder
+          dimensions: [0.14, 0.03]
+      primitive_poses:
+        - position: [0.8, 0, 0.55]
+          orientation: [0, 0, 0, 1]
+    - id: base
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.7, 0.7, 0.04]
+      primitive_poses:
+        - position: [0.8, 0, 0.44]
+          orientation: [0, 0, 0, 1]
+    - id: side_back
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.04, 0.7, 0.7]
+      primitive_poses:
+        - position: [1.15, 0, 0.8]
+          orientation: [0, 0, 0, 1]
+    - id: side_cap
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.7, 0.7, 0.04]
+      primitive_poses:
+        - position: [0.9, 0, 1.35]
+          orientation: [0, 0.3829109835432866, 0, 0.923785244892942]
+    - id: side_front
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.04, 0.7, 0.6]
+      primitive_poses:
+        - position: [0.45, 0, 0.7]
+          orientation: [0, 0, 0, 1]
+    - id: side_left
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.7, 0.04, 0.7]
+      primitive_poses:
+        - position: [0.8, -0.35, 0.8]
+          orientation: [0, 0, 0, 1]
+    - id: side_right
+      pose:
+        position: [-0.221258758837335, 0.04484222114793394, -0.9262264457751537]
+        orientation: [0, 0, 0.07406844364750123, 0.9972531602635496]
+      primitives:
+        - type: box
+          dimensions: [0.7, 0.04, 0.7]
+      primitive_poses:
+        - position: [0.8, 0.35, 0.8]
+          orientation: [0, 0, 0, 1]

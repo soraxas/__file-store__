@@ -1,0 +1,9 @@
+joint_trajectory:
+  joint_names: [panda_joint1, panda_joint2, panda_joint3, panda_joint4, panda_joint5, panda_joint6, panda_joint7]
+  points:
+    - positions: [0, -0.785, 0, -2.356, 0, 1.571, 0.785]
+      time_from_start: 0
+    - positions: [0.9441307791758328, -0.1793023422126936, 0.387634616043403, -1.379865513684575, -2.764085572285526, 2.711069414436477, 0.2564352389245698]
+      time_from_start: 0
+    - positions: [1.072174051368679, 0.8044537247667326, 0.2287097432931083, -1.235747754149484, -2.751330419736177, 2.622057827452129, 0.2745036656323461]
+      time_from_start: 0
