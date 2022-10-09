@@ -15,22 +15,22 @@ start_state:
 goal_constraints:
   - joint_constraints:
       - joint_name: panda_joint1
-        position: 0.579934153190513
+        position: 0.5725855787045482
       - joint_name: panda_joint2
-        position: 1.761411108643704
+        position: 1.749021601037867
       - joint_name: panda_joint3
-        position: 0.007865634225708247
+        position: 0.01519132957447073
       - joint_name: panda_joint4
-        position: -0.8417032891223934
+        position: -0.8815212450588926
       - joint_name: panda_joint5
-        position: 0.004014359869675291
+        position: -0.03218405565319697
       - joint_name: panda_joint6
-        position: 2.60669669759542
+        position: 2.638364095241239
       - joint_name: panda_joint7
-        position: -0.3644793692586255
+        position: -0.3462769718788743
 planner_id: RRTConnectkConfigDefault
 group_name: panda_arm
-num_planning_attempts: 2
+num_planning_attempts: 5
 allowed_planning_time: 60
 max_velocity_scaling_factor: 0
 max_acceleration_scaling_factor: 0

@@ -6,7 +6,7 @@ workspace_parameters:
 start_state:
   joint_state:
     name: [panda_joint1, panda_joint2, panda_joint3, panda_joint4, panda_joint5, panda_joint6, panda_joint7, panda_finger_joint1, panda_finger_joint2]
-    position: [-1.358498351676699, 1.525571469664052, 0.7996395113196894, -1.287231987387213, 2.8973, 2.119709383184423, 0.09362084658590493, 0.065, 0.065]
+    position: [0.5095689481341135, 1.7628, 0.1447550247916489, -0.6417725384325279, -2.870400942994507, 2.255706768812975, 0.4804634396131845, 0.065, 0.065]
   multi_dof_joint_state:
     joint_names: [virtual_joint]
     transforms: [{translation: [0, 0, 0], rotation: [0, 0, 0, 1]}]
@@ -15,22 +15,22 @@ start_state:
 goal_constraints:
   - joint_constraints:
       - joint_name: panda_joint1
-        position: -0.4242969500181991
+        position: 0.4872382686909218
       - joint_name: panda_joint2
-        position: 1.316723590916405
+        position: 0.907046718523342
       - joint_name: panda_joint3
-        position: -1.138824164046968
+        position: 0.1280422837872529
       - joint_name: panda_joint4
-        position: -0.5362140405930447
+        position: -1.107508606678655
       - joint_name: panda_joint5
-        position: 2.719427955944331
+        position: -2.566589542675216
       - joint_name: panda_joint6
-        position: 3.254781103106895
+        position: 2.595165751282519
       - joint_name: panda_joint7
-        position: 2.283119981281939
+        position: 0.1760993928197233
 planner_id: RRTConnectkConfigDefault
 group_name: panda_arm
-num_planning_attempts: 2
+num_planning_attempts: 5
 allowed_planning_time: 60
 max_velocity_scaling_factor: 0
 max_acceleration_scaling_factor: 0
